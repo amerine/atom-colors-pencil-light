@@ -2,7 +2,7 @@
 
 Really like [iA Writer's][iaw] colors, but want them elsewhere?  This is a port to Atom, based on the [vim theme][pencil-vim].  It's a quick and dirty port so far while kicking the tires on atom, here's the [dark version][atom-pencil-dark].
 
-![less example](screenshot.png)
+![less example](https://dl.dropboxusercontent.com/u/330142/atom-images/pencil-syntax-light.png)
 
 If you'd like a companion theme for your iTerm, check out my [iTerm theme][pencil-iterm].
 
