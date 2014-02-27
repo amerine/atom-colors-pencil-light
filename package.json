@@ -1,0 +1,12 @@
+{
+  "name": "pencil-light",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "private": false,
+  "description": "a light theme with colors inspired by iA Writer",
+  "repository": "https://github.com/mattly/atom-colors-pencil-light",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

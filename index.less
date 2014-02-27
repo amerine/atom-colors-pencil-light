@@ -1,0 +1,142 @@
+@gray01: #212121;
+@gray02: #262626;
+@gray03: #424242;
+@gray04: #545454;
+@gray05: #767676;
+@gray06: #B2B2B2;
+@gray07: #D9D9D9;
+@gray08: #f1f1f1;
+@white:  #FFFFFF;
+
+@pink:   #FB007A;
+@red_dark: #C30071;
+@red_light: #E32791;
+@orange: #D75F5F;
+
+@blue_darker: #005F87;
+@blue_dark: #008EC4;
+@blue: #20BBFC;
+@blue_light: #B6D6FD;
+@cyan_dark: #20A5BA;
+@cyan_light: #4FB8CC;
+
+@green_dark: #10A778;
+@green_light: #5FD7A7;
+
+@purple_dark: #523C79;
+@purple_light: #6855DE;
+
+@yellow_light: #F3E430;
+@yellow_dark: #A89C14;
+
+@background: @gray08;
+@background_subtle: @gray06;
+@background_very_subtle: @gray07;
+@normal: @gray01;
+@normal_subtle: @gray02;
+
+// The ui-variables file is provided by base themes provided by Atom.
+//
+
+.editor-colors {
+  background-color: @background;
+  color: @normal;
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @background_subtle;
+  }
+
+  .gutter {
+    background-color: @background;
+    color: @background_subtle;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @background_subtle;
+  }
+
+  .cursor {
+    border-color: @blue;
+    border-width: 3px;
+  }
+
+  .selection .region {
+    background-color: @blue_light;
+  }
+
+  .line-number.cursor-line-no-selection {
+    color: @blue;
+  }
+}
+
+.bracket-matcher {
+  background-color: @background_very_subtle;
+}
+
+.comment {
+  color: @gray05;
+  font-style: italic;
+}
+
+.entity {
+  color: @blue_dark;
+}
+
+.keyword {
+  color: @green_dark;
+}
+
+.storage.type {
+  color: @purple_dark;
+}
+
+.constant {
+  color: @blue_dark;
+
+  &.numeric,
+  &.boolean {
+    @blue_darker;
+  }
+}
+
+.variable {
+  color: @red_dark;
+}
+
+.delimiter, .brace,
+.delimiter.period,
+.punctuation.definition {
+  color: @pink;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+}
+
+.invalid.illegal {
+  background-color: @red_dark;
+  color: @white;
+}
+
+.string {
+  color: @cyan_dark;
+
+  .constant.character.escape {
+  }
+
+  &.regexp {
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+    }
+  }
+}
